@@ -1,7 +1,6 @@
 const stats = [
   { value: "3+", label: "Years of\nexperience" },
   { value: "10+", label: "Projects\ndelivered" },
-  { value: "3.68", label: "University\nGPA /4.0" },
   { value: "2", label: "International\nexperiences" },
 ];
 
@@ -22,10 +21,10 @@ export default function About() {
           </h2>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 gap-px bg-black/10 border border-black/10">
+          <div className="flex border-t border-b border-black/10 divide-x divide-black/10">
             {stats.map((s) => (
-              <div key={s.value} className="bg-white p-6">
-                <p className="font-serif text-4xl font-bold mb-1">{s.value}</p>
+              <div key={s.value} className="flex-1 py-6 px-5 first:pl-0">
+                <p className="font-serif text-4xl font-bold leading-none mb-2">{s.value}</p>
                 <p className="text-xs text-black/50 whitespace-pre-line leading-relaxed">
                   {s.label}
                 </p>
@@ -37,33 +36,49 @@ export default function About() {
         {/* Right: bio text */}
         <div className="space-y-5 pt-12">
           <p className="text-base text-black/70 leading-relaxed">
-            I&apos;m <strong className="text-black">Le Thanh Hung</strong>, an
-            AI Developer based in Hue, Vietnam. I graduated from Hue University
-            with a degree in Data Science and Artificial Intelligence, and I&apos;ve
-            been building production ML systems ever since.
+            I&apos;m <strong className="text-black">Le Thanh Hung</strong> — an
+            AI Developer from Hue, Vietnam, specializing in building intelligent
+            systems that go beyond prototypes into production.
           </p>
           <p className="text-base text-black/70 leading-relaxed">
-            Currently at <strong className="text-black">Mettadepth</strong>, I
-            develop AI models for healthcare and insurance risk prediction, build
-            PDF extraction pipelines, design recommendation engines, and
-            integrate ML into full-stack web applications using Next.js and
-            FastAPI.
+            Currently at{" "}
+            <a
+              href="https://simplifyx.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-black underline underline-offset-2 hover:opacity-60 transition-opacity"
+            >
+              SimplifyX
+            </a>
+            , I architect multi-agent systems, RAG pipelines, and AI
+            microservices — shipping real-world AI with FastAPI and gRPC.
+            Previously built ML models for healthcare risk prediction at{" "}
+            <a
+              href="https://www.mettadepth.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-black underline underline-offset-2 hover:opacity-60 transition-opacity"
+            >
+              MettaDepth
+            </a>
+            .
           </p>
           <p className="text-base text-black/70 leading-relaxed">
-            My journey spans NLP research, LLM applications with LangChain,
-            computer vision with YOLO, and end-to-end ML product development.
-            I&apos;m passionate about pushing AI research into real-world impact.
+            My work spans NLP, LLMs, computer vision, and full-stack AI
+            integration. I&apos;ve shipped projects across healthcare, education,
+            and automation — and did international research at Kasetsart
+            University, Thailand.
           </p>
           <p className="text-base text-black/70 leading-relaxed">
-            Beyond engineering, I aspire to pursue a{" "}
+            I&apos;m driven by the gap between AI research and real impact.
+            Next step:{" "}
             <strong className="text-black">Master&apos;s degree</strong> and
-            contribute to the research community — building innovative solutions
-            that make a difference.
+            deeper contribution to the research community.
           </p>
 
           <div className="pt-4 flex flex-wrap gap-3">
             {[
-              "hung.le@mettadepth.com",
+              "lthung2112@gmail.com",
               "Hue, Vietnam",
             ].map((item) => (
               <span
