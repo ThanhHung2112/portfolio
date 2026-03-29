@@ -31,7 +31,7 @@ const experiences = [
   },
   {
     company: "DEHA Company",
-    website: null,
+    website: "https://deha-soft.com/",
     role: "AI Developer — LMS Integration",
     period: "Jun 2023 – Sep 2023",
     duration: "3 Months",

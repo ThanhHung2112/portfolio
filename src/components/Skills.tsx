@@ -37,9 +37,9 @@ const certifications = [
     year: "2023",
   },
   {
-    title: "Data Science & Artificial Intelligence",
-    org: "School of Engineering & Technology, Hue University — GPA 3.68/4.0",
-    year: "2019–2024",
+    title: "Data Science & Artificial Intelligence — Excellent",
+    org: "Engineer's Degree · School of Engineering & Technology, Hue University — GPA 3.66/4.0",
+    year: "2020–2025",
   },
 ];
 
